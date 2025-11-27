@@ -1,0 +1,13 @@
+{
+    "wheel": {
+        "segments": 8,
+        "rotationsPerSpin": 5,
+        "spinDuration": 4,
+        "pullbackDuration": 0.5,
+        "pullbackDistance": 0.3,
+        "landingBounceDuration": 1.0,
+        "landingBounceDistance": 0.1
+    },
+    "readyText": "Click anywhere to Spin",
+    "spinningText": "Good Luck..."
+}

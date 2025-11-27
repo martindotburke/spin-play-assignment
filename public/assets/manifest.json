@@ -1,0 +1,17 @@
+{
+  ".DS_Store": "assets/.DS_Store",
+  "bunny": "assets/bunny.png",
+  "settings": "assets/config/settings.json",
+  "background": "assets/images/background.png",
+  "coin-anim": "assets/images/coin-anim.png",
+  "glow": "assets/images/glow.png",
+  "pointer": "assets/images/pointer.png",
+  "sunburst": "assets/images/sunburst.png",
+  "wheel-center": "assets/images/wheel-center.png",
+  "wheel-slice": "assets/images/wheel-slice.png",
+  "logo": "assets/logo.svg",
+  "manifest": "assets/manifest.json",
+  "credits-rollup": "assets/sounds/credits-rollup.wav",
+  "wheel-click": "assets/sounds/wheel-click.wav",
+  "wheel-landing": "assets/sounds/wheel-landing.wav"
+}
