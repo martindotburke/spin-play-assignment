@@ -3,6 +3,7 @@ export type GameData = {
   playerBalance: number;
 };
 
+// DataStore is responsible for managing the game state and player data.
 export class DataStore {
   private _gameData: GameData | null = null;
   private _result: number | null = null;

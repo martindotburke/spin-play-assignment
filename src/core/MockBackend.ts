@@ -1,5 +1,6 @@
 import { GameData } from "./DataStore";
 
+// MockBackend simulates backend interactions for game handshakedata and spin results.
 export class MockBackend {
   private readonly weightedResults = [
     [5000, 4],

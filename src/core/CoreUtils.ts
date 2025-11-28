@@ -5,6 +5,8 @@ import { Application } from "pixi.js";
 import { GameSettings } from "./GameSettings";
 import { SoundController } from "./SoundController";
 
+// CoreUtils is a central utility class that provides access to core services
+// such as asset management, event handling, game state management, and sound control.
 export class CoreUtils {
   private readonly _assetManager: AssetManager;
   private readonly _gameController: GameController;

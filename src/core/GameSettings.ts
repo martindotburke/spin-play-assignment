@@ -5,6 +5,8 @@ export type GameSettings = {
   titleText: string;
   winText: string;
   bigWinThreshold: number;
+  winCountUpDuration: number;
+  bigWinCountUpDuration: number;
 };
 
 export type WheelSettings = {

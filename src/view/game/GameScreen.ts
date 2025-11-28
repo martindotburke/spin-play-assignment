@@ -5,6 +5,7 @@ import { APP_HEIGHT, APP_WIDTH } from "../../config";
 import { Text } from "pixi.js";
 import { CoinShower } from "./CoinShower";
 
+// Main game screen view component
 export class GameScreen extends BaseViewComponent {
   private wheelComponent: WheelComponent;
   private coinShower: CoinShower;

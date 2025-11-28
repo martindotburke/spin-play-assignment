@@ -74,9 +74,15 @@ export class GameUI extends BaseViewComponent {
 
   private countUpWin(winAmount: number): void {
     this.soundController.playCreditsRollup();
+    const isBigWin = winAmount >= this.core.gameSettings.bigWinThreshold;
+    const duration =
+      this.core.gameSettings[
+        isBigWin ? "bigWinCountUpDuration" : "winCountUpDuration"
+      ];
+
     gsap.to(this, {
       balanceAmount: this.balanceAmount + winAmount,
-      duration: 2,
+      duration: duration,
       ease: "none",
       onUpdate: () => {
         this.setBalanceText(this.balanceAmount);

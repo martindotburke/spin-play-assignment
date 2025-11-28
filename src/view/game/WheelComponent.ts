@@ -11,6 +11,8 @@ enum WheelState {
   BOUNCE,
 }
 
+// Wheel component that constructs the wheel based on game settings and handles spinning logic.
+// Values on the wheel segments and spin results are provided from the mock backend
 export class WheelComponent extends BaseViewComponent {
   private settings: WheelSettings;
   private valueToRotationMap: Map<number, number> = new Map<number, number>();

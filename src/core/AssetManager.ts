@@ -1,13 +1,18 @@
 import { Assets, Sprite } from "pixi.js";
 import { Howl } from "howler";
 
+/*
+  TODO - We could make the manifest better by grouping assets as follows:
+    - by type: Separeate images, audio, data etc so we can load only what is needed
+    - by usage: e.g. loading screen assets, game screen assets, ui assets etc. We might want to load loading screen assets first, then game screen assets etc
+    - by locale: e.g. en, fr, es etc so we can load translations, settings etc as required for the current locale
+*/
+
 export class AssetManager {
   private assetMap: Record<string, string> = {};
   private audioCache: Record<string, Howl> = {};
 
   public async loadAssets(): Promise<void> {
-    //TODO - We could split assets into 2 batches; loading screen followed by game assets
-
     await Assets.load("/assets/manifest.json");
     const manifest = Assets.get("/assets/manifest.json");
     this.assetMap = manifest as Record<string, string>;

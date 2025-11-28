@@ -1,6 +1,7 @@
 import { Container } from "pixi.js";
 import { CoreUtils } from "../core";
 
+// Base class for all view components providing access to core utilities
 export abstract class BaseViewComponent extends Container {
   protected readonly core: CoreUtils;
 

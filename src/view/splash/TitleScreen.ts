@@ -1,7 +1,7 @@
 import { Text } from "pixi.js";
 import { BaseViewComponent } from "../BaseViewComponent";
 import { CoreUtils, GameEvent } from "../../core";
-import { Button } from "../Button";
+import { Button } from "../game-ui/Button";
 import { APP_HEIGHT, APP_WIDTH } from "../../config";
 import { gsap } from "gsap";
 

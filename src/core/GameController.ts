@@ -2,6 +2,7 @@ import EventEmitter from "eventemitter3";
 import { DataStore, GameEvent } from ".";
 import { MockBackend } from "./MockBackend";
 
+// GameController manages the game flow, handles events, and communicates with the backend.
 export class GameController {
   private readonly events: EventEmitter<GameEvent>;
   private readonly dataStore: DataStore;

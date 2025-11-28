@@ -5,6 +5,9 @@ import { GameScreen } from "./game/GameScreen";
 import { GameUI } from "./game-ui/GameUI";
 import { SplashScreen } from "./splash/TitleScreen";
 import { APP_HEIGHT, APP_WIDTH } from "../config";
+import { gsap } from "gsap";
+
+// Root view component that manages the main screens of the game
 
 export class RootView extends BaseViewComponent {
   private readonly splashScreen: SplashScreen;
@@ -42,7 +45,16 @@ export class RootView extends BaseViewComponent {
   }
 
   private showGameScreen() {
-    this.splashScreen.visible = false;
+    this.gameScreen.alpha = 0;
     this.gameScreen.visible = true;
+    gsap.to(this.gameScreen, { alpha: 1, duration: 1 });
+    gsap.to(this.splashScreen, {
+      alpha: 0,
+      duration: 1,
+      onComplete: () => {
+        this.splashScreen.visible = false;
+        this.splashScreen.alpha = 1;
+      },
+    });
   }
 }

@@ -8,9 +8,11 @@
         "landingBounceDuration": 1.0,
         "landingBounceDistance": 0.1
     },
-    "readyText": "Click anywhere to Spin",
-    "spinningText": "Good Luck...",
-    "titleText": "Wheel Spin Game!",
+    "readyText": "CLICK ANYWHERE TO SPIN",
+    "spinningText": "GOOD LUCK!",
+    "titleText": "WHEEL SPIN GAME!",
     "winText": "YOU WON {value} CREDITS!",
-    "bigWinThreshold": 4000
+    "bigWinThreshold": 4000,
+    "winCountUpDuration": 2.0,
+    "bigWinCountUpDuration": 4.0
 }

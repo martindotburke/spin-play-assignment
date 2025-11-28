@@ -7,7 +7,8 @@ import { APP_HEIGHT, APP_WIDTH } from ".";
   // Create a new application
   const app = new Application();
   //@ts-ignore
-  globalThis.__PIXI_APP__ = app;
+  globalThis.__PIXI_APP__ = app; // Expose PIXI application globally for debugging
+
   // Initialize the application
   await app.init({
     background: "#1099bb",
@@ -15,7 +16,6 @@ import { APP_HEIGHT, APP_WIDTH } from ".";
     height: APP_HEIGHT,
   });
 
-  // Append the application canvas to the document body
   document.getElementById("pixi-container")!.appendChild(app.canvas);
 
   const core = new CoreUtils(app);

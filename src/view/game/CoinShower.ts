@@ -3,6 +3,10 @@ import { BaseViewComponent } from "../BaseViewComponent";
 import { CoreUtils } from "../..";
 import { Ticker } from "pixi.js";
 
+// Particle emitter that creates a shower of coins spawning from the bottom of the screen
+// This is displayed for Big wins, which can be forced by pressing 0 before spinning
+// Note, we are using a forked version of pixi-particles, as the original is no longer maintained
+// and doesn't support the latest versions of PixiJS
 export class CoinShower extends BaseViewComponent {
   private emitter: Emitter;
 
@@ -22,7 +26,7 @@ export class CoinShower extends BaseViewComponent {
   }
 
   public update(ticker: Ticker): void {
-    this.emitter.update(ticker.deltaMS * 0.001);
+    this.emitter.update(ticker.deltaMS / 1000);
   }
 
   private getEmitterConfig(): EmitterConfigV3 {

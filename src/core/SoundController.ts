@@ -1,5 +1,6 @@
 import { AssetManager } from "./AssetManager";
 
+// Controls playback of Howler sounds loaded by the AssetManager.
 export class SoundController {
   private assetManager: AssetManager;
   private creditsRollupSound: Howl | null = null;

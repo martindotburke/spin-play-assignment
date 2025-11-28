@@ -10,4 +10,4 @@ export enum GameEvent {
   SHOW_WIN_COMPLETE = "SHOW_WIN_COMPLETE",
 }
 
-// TODO - Can we add further typing to the events with payloads?
+// TODO - Can we add further typing to event payloads?
