@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "dev": "npm run create-assets-manifest && webpack serve --mode=development",
-    "create-assets-manifest": "tsx ./build/generate-assets-manifest.ts ./public/assets/"
+    "create-assets-manifest": "tsx ./script/generate-assets-manifest.ts ./public/assets/"
   },
   "dependencies": {
     "@barvynkoa/particle-emitter": "^0.0.1",
